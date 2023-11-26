@@ -1,12 +1,12 @@
-import { HardhatUserConfig } from "hardhat/config";
-import "@nomicfoundation/hardhat-toolbox";
-import "@openzeppelin/hardhat-upgrades";
-import dotenv from "dotenv";
+import { HardhatUserConfig } from 'hardhat/config';
+import '@nomicfoundation/hardhat-toolbox';
+import '@openzeppelin/hardhat-upgrades';
+import dotenv from 'dotenv';
 dotenv.config();
-import { envConfig } from "./config";
+import { envConfig } from './config';
 
 const config: HardhatUserConfig = {
-  solidity: "0.8.20",
+  solidity: '0.8.20',
   networks: {
     goerli: {
       url: envConfig.GOERLI_RPC_URL,
