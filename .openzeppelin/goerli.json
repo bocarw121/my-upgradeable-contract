@@ -29,6 +29,26 @@
       "address": "0x2592eaD9BEe00DCdFeD2B6b189499E936E0781FB",
       "txHash": "0x55ac8de19f73be7f02b32c4a2eedab8efbb033505b3116c240c49ecfa02afb3d",
       "kind": "transparent"
+    },
+    {
+      "address": "0xeFc7069965dfD5ADADCb7Efc5A584A9E19cF5697",
+      "txHash": "0x31fe419e0a75bd88a638d61c2a1d2d65fc46dd1d58ac5b8f2163e4e82b8194e4",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xBE7bF39340E097B62C1aFceF6FEFCC932e7ed86C",
+      "txHash": "0xaaee6f6692daa86268407b62434b50fccdb81612401a06311494bccc411036d9",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xF0e2B37C6E312A10F8A91e0C66C76AA8A0d10ACC",
+      "txHash": "0x3a142b92140523d680d7f92a8499561d4f6a5b0dd2770605c5aec060b6cf5e1c",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x3621f660b524f55e32f2950a0eA3021Fc31Eec3A",
+      "txHash": "0x0f1b77e2817b37963f477e80495292d7f26b4df1474d4bfab3d7ec27f7ba0ca6",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -243,6 +263,107 @@
             "type": "t_uint256",
             "contract": "VendingMachineV3",
             "src": "contracts/VendingMachineV3.sol:19"
+          }
+        ],
+        "types": {
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)10_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "6292bfe433b25e515b782932f7bade2bd25ad51b7af88f64ecd5ef89335d79a1": {
+      "address": "0x0EA51310f30AA70ECA4723Ce21cD630989421524",
+      "txHash": "0xf154c95e498f214eb72705be421abc2e6c139a774ecff57f4fcb5815733173e6",
+      "layout": {
+        "solcVersion": "0.8.20",
+        "storage": [
+          {
+            "label": "numSodas",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "VendingMachineV4",
+            "src": "contracts/VendingMachineV4.sol:15"
+          },
+          {
+            "label": "owner",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_address",
+            "contract": "VendingMachineV4",
+            "src": "contracts/VendingMachineV4.sol:16"
+          },
+          {
+            "label": "userPurchase",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "VendingMachineV4",
+            "src": "contracts/VendingMachineV4.sol:17"
+          },
+          {
+            "label": "lastWithdrawalTime",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256",
+            "contract": "VendingMachineV4",
+            "src": "contracts/VendingMachineV4.sol:19"
           }
         ],
         "types": {

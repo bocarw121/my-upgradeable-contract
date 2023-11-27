@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
-import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
+import '@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol';
 
 contract VendingMachineV1 is Initializable {
     // these state variables and their values
@@ -15,7 +15,7 @@ contract VendingMachineV1 is Initializable {
     }
 
     function purchaseSoda() public payable {
-        require(msg.value == 1000 wei, "You must pay 1000 wei for a soda!");
+        require(msg.value == 1000 wei, 'You must pay 1000 wei for a soda!');
         numSodas--;
     }
 }
